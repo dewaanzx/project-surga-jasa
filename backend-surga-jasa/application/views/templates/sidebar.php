@@ -67,8 +67,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="#" class="nav-link active">
-
+                <a href="<?= base_url('laundry')?>" class="nav-link active">
                   <p>Laundry</p>
                 </a>
               </li>
@@ -99,7 +98,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Surga Jasa</h1>
+            <h1 class="m-0 text-dark"><?= $title ?></h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
