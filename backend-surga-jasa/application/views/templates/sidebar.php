@@ -81,7 +81,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="<?= base_url('catering')?>"class="nav-link active">
                   <p>Catering</p>
                 </a>
               </li>
