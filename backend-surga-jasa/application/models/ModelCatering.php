@@ -1,8 +1,8 @@
 <?php
 
-class ModelLaundry extends CI_Model {
-	var $table = "laundry";
-	var $primaryKey = "id_laundry";
+class ModelCatering extends CI_Model {
+	var $table = "catering";
+	var $primaryKey = "id_catering";
 
 	public function insert($data) {
 		return $this->db->insert($this->table, $data);
@@ -27,7 +27,8 @@ class ModelLaundry extends CI_Model {
 		return $this->db->update($this->table, $data);
 	}
 
-	public function delete($id)
+
+    public function delete($id)
     {
         return $this->db->where($this->primaryKey, $id)->delete($this->table);
     }

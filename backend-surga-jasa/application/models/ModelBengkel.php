@@ -7,10 +7,16 @@ class ModelBengkel extends CI_Model
 	var $table = "bengkel";
 	var $primaryKey = "id_bengkel";
 
+
+	//function untuk get all data bengkel
+
 	public function getAll()
 	{
 		return $this->db->get($this->table)->result();
 	}
+
+
+	// function untuk get data by primary_key
 
 	public function getByPrimaryKey($id)
 	{
@@ -34,7 +40,7 @@ class ModelBengkel extends CI_Model
 		$this->db->where($this->primaryKey, $id);
 		return $this->db->update($this->table, $data);
 	}
-	
+
 	public function delete($id)
 	{
 		return $this->db->where($this->primaryKey, $id)->delete($this->table);

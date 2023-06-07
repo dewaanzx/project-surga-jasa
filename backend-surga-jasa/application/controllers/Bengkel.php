@@ -28,10 +28,17 @@ class Bengkel extends CI_Controller
 		$this->load->view('templates/sidebar');
 		$this->load->view("content/bengkel/v_add_bengkel");
 		$this->load->view('templates/footer');
+
+//	untuk me load tampilan form tambah bengkel
+	public function tambah()
+	{
+		$this->load->view("content/bengkel/v_add_bengkel");
+
 	}
 
 	public function insert()
 	{
+
 		$config['upload_path']          = './gambar/';
                 $config['allowed_types']        = "jpg|jpeg|png";
                 $config['max_size']             = 10000;
@@ -75,22 +82,35 @@ class Bengkel extends CI_Controller
                             redirect('bengkel');
 							
                         }
+		$this->load->view('templates/header');
+		$this->load->view('templates/sidebar');
+		$data = array(
+			"nama_bengkel" => $this->input->post("nama_bengkel")
+		);
+		$id = $this->ModelBengkel->insertGetId($data);
+		redirect('bengkel');
+		$this->load->view('templates/footer');
 	}
 
 	public function ubah($id)
 	{
+
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
+
 		$bengkel = $this->ModelBengkel->getByPrimaryKey($id);
 		$data = array(
 			"bengkel" => $bengkel,
 		);
 		$this->load->view('content/bengkel/v_update_bengkel', $data);
+
 		$this->load->view('templates/footer');
+
 	}
 
 	public function update()
 	{
+
 		$config['upload_path']          = './gambar/';
                 $config['allowed_types']        = "jpg|jpeg|png";
                 $config['max_size']             = 10000;
@@ -134,6 +154,17 @@ class Bengkel extends CI_Controller
                             redirect('bengkel');
 							
                         }
+
+		$this->load->view('templates/header');
+		$this->load->view('templates/sidebar');
+		$id = $this->input->post('id_bengkel');
+		$data = array(
+			"nama_bengkel" => $this->input->post('nama_bengkel')
+		);
+		$this->ModelBengkel->update($id, $data);
+		redirect('bengkel');
+		$this->load->view('templates/footer');
+
 	}
 
 	public function delete()
