@@ -2,7 +2,7 @@
 
 class ModelLaundry extends CI_Model {
 	var $table = "laundry";
-	var $primaryKey = "id";
+	var $primaryKey = "id_laundry";
 
 	public function insert($data) {
 		return $this->db->insert($this->table, $data);

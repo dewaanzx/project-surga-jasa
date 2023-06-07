@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Form Tambah About Us</title>
+    <title>Form Ubah Laundry</title>
     <!-- CSS only CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -16,50 +16,63 @@
 </head>
 
 <body>
-<div class="content">  
+    <div class="content">
     <div class="card">
         <div class="card-header">
-            <h3>Form Tambah Laundry</h3>
+            <h3>Form Update Laundry</h3>
         </div>
         <div class="card-body">
-            <form method="post" action="<?= site_url('laundry/insert') ?>" enctype="multipart/form-data">
+            <form id="form-update-laundry" method="post" action="<?= site_url('laundry/update') ?>" enctype="multipart/form-data">
                 <div class="form-group">
                     <label class="form-label">Nama</label>
-                    <input required  type="text" class="form-control" name="nama" placeholder="Nama">
+                    <input required type="text" value="<?= $laundry->nama_laundry?>" class="form-control" name="nama_laundry">
                 </div>
                 <div class="form-group">
                     <label class="form-label">Alamat</label>
-                    <textarea required type="textarea" class="form-control" name="alamat" placeholder="Alamat"></textarea>
+                    <textarea required class="form-control"  rows="5" cols="60" name="alamat_laundry"><?php echo $laundry->alamat_laundry; ?></textarea>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Kontak</label>
-                    <textarea required type="textarea" class="form-control" name="kontak" placeholder="Kontak"></textarea>
+                    <textarea required class="form-control"  rows="5" cols="60" name="no_hp_laundry"><?php echo $laundry->no_hp_laundry; ?></textarea>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Deskripsi</label>
-                    <textarea required class="form-control filt" name="sejarah" placeholder="Sejarah"></textarea>
-                </div>  
+                    <textarea required class="form-control"  rows="5" cols="60" name="deskripsi_laundry"><?php echo $laundry->deskripsi_laundry; ?></textarea>
+                </div>
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Gambar</label>
-                    <input required class="form-control" type="file" id="formFile" name="logo">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-12 col-md-12 col-lg-9 mb-3">
+								<input class="form-control" value="<?= $laundry->gambar?>" type="file" id="formFile" name="gambar">
+                                <input  value="<?= $laundry->gambar?>" type="hidden" id="formFile" name="gambar">
+                            </div>
+							<div class="col-sm-12 col-md-12 col-lg-3">
+								<img src="<?php echo base_url();?>upload/<?php echo $laundry->gambar?>"  style="max-width:250px;">
+							</div>
+						</div>
+					</div>
                 </div>
-				<button type="submit"  class="btn btn-success btn-sm">
+                <input type="hidden" name="id_laundry" value="<?= $laundry->id_laundry ?>">
+            	<button type="submit"  class="btn btn-success btn-sm">
 					<i class="fa fa-save"></i> Simpan
 				</button>
-                <a href="<?= site_url('aboutus') ?>" class="btn btn-primary btn-sm">
+                <a href="<?= site_url('laundry') ?>" class="btn btn-primary btn-sm">
                 <i class="fa fa-reply"></i> Kembali
                 </a>
                 </div>
             </form>
-        </div>
-        <div class="card-footer">
+        <div class="card-footer"> 
         </div>
     </div>
-</div>
+    </div>
 </body>
-
 </html>
-
 <script>
-
+    $(function (){
+        $("#btn-update-laundry").on("click", function() {
+           
+                $("#form-update-laundry").submit()
+        })
+    })
 </script>
