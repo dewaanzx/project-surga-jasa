@@ -56,6 +56,10 @@
 				<tr>
 					<td><?= $no++ ?></td>
 					<td><?= $b->nama_bengkel ?></td>
+					<td><?= $b->no_hp_bengkel ?></td>
+					<td><?= $b->alamat_bengkel ?></td>
+					<td><?= $b->deskripsi_bengkel ?></td>
+					<td><?= $b->gambar ?></td>
 					<td>
 						<a href="<?= site_url("bengkel/ubah/$b->id_bengkel") ?>" class="btn btn-warning btn-sm">
 							<i class="fa fa-pencil"></i>
@@ -101,7 +105,7 @@
 			$("#modal-confirm-delete").modal('show');
 		});
 		$("#btn-delete").on("click", function () {
-			//panggil url untuk hapus data
+			
 			let inputId = $("<input>")
 				.attr("type", "hidden")
 				.attr("name", "id_bengkel")
