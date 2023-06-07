@@ -29,6 +29,23 @@
 				<label class="form-label">Nama Bengkel</label>
 				<input require type="text" class="form-control" name="nama_bengkel">
 			</div>
+			<div class="form-group">
+				<label class="form-label">Alamat</label>
+				<input require type="text" class="form-control" name="alamat_bengkel">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Nomor Hp</label>
+				<input require type="number" class="form-control" name="no_hp_bengkel">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Deskripsi</label>
+				<input require type="text" class="form-control" name="deskripsi_bengkel">
+			</div>
+			<div class="form-group">
+                    <label class="form-label">Gambar</label>
+                    <input require type="file" class="form-control" name="userfile"
+                    size="20" required="">
+            </div>
 		</form>
 	</div>
 	<div class="card-footer">
@@ -55,6 +72,15 @@
 		$("#form-tambah-bengkel").validates({
 			rules: {
 				nama_bengkel: {
+					digits: true
+				},
+				alamat_bengkel: {
+					digits: true
+				},
+				no_hp_bengkel: {
+					digits: true
+				},
+				deskripsi_bengkel: {
 					digits: true
 				}
 			},

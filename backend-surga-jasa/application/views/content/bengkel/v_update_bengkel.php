@@ -25,10 +25,26 @@
 	<div class="card-body">
 		<form id="form-update-bengkel" method="post" action="<?= site_url('bengkel/update') ?>"
 			  enctype="multipart/form-data">
-
-			<label class="form-label">Bengkel</label>
-			<input require type="text" value="<?= $bengkel->nama_bengkel ?>" class="form-control"
-				   name="nama_bengkel">
+			<div class="form-group">
+				<label class="form-label">Bengkel</label>
+				<input require type="text" value="<?= $bengkel->nama_bengkel ?>" class="form-control" name="nama_bengkel">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Alamat</label>
+				<input require type="text" value="<?= $bengkel->alamat_bengkel ?>" class="form-control" name="alamat_bengkel">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Nomor Hp</label>
+				<input require type="text" value="<?= $bengkel->no_hp_bengkel ?>" class="form-control" name="no_hp_bengkel">
+			</div>
+			<div class="form-group">
+				<label class="form-label">Deskripsi</label>
+				<input require type="text" value="<?= $bengkel->deskripsi_bengkel ?>" class="form-control" name="deskripsi_bengkel">
+			</div>
+			<div class="form-group">
+                <label class="form-label">Gambar</label>
+                <input require type="file" value="<?= $bengkel->gambar?>" class="form-control" name="userfile" size="20" required="">
+            </div>
 	</div>
 	<input type="hidden" name="id_bengkel" value="<?= $bengkel->id_bengkel ?>">
 	</form>

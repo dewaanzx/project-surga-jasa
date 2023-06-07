@@ -41,6 +41,10 @@
 			<tr>
 				<th>Nomor</th>
 				<th>Nama Bengkel</th>
+				<th>Nomor Hp Bengkel</th>
+				<th>Alamat Bengkel</th>
+				<th>Deskripsi Bengkel</th>
+				<th>Gambar</th>
 				<th>Action</th>
 			</tr>
 			</thead>
