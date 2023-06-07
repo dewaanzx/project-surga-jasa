@@ -76,7 +76,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active">
+                <a href="<?= base_url('bengkel')?>" class="nav-link active">
                   <p>Bengkel</p>
                 </a>
               </li>
