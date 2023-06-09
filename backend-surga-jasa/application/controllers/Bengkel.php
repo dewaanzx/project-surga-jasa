@@ -18,6 +18,7 @@ class Bengkel extends CI_Controller
 		$data = array(
 			"bengkel" => $dataBengkel
 		);
+		$data['title'] ='Bengkel';
 		$this->load->view('content/bengkel/v_list_bengkel', $data);
 		$this->load->view('templates/footer');
 	}
@@ -27,15 +28,10 @@ class Bengkel extends CI_Controller
 		$this->load->view('templates/header');
 		$this->load->view('templates/sidebar');
 		$this->load->view("content/bengkel/v_add_bengkel");
+		$data['title'] ='Bengkel';
 		$this->load->view('templates/footer');
-
-//	untuk me load tampilan form tambah bengkel
-	public function tambah()
-	{
-		$this->load->view("content/bengkel/v_add_bengkel");
-
 	}
-
+	
 	public function insert()
 	{
 
@@ -103,7 +99,7 @@ class Bengkel extends CI_Controller
 			"bengkel" => $bengkel,
 		);
 		$this->load->view('content/bengkel/v_update_bengkel', $data);
-
+		$data['title'] ='Bengkel';
 		$this->load->view('templates/footer');
 
 	}
