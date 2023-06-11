@@ -36,7 +36,7 @@
 		</a>
 	</div>
 	<div class="card-body">
-		<table class="table">
+		<table class="table table-bordered table-hover">
 			<thead>
 			<tr>
 				<th>Nomor</th>
@@ -59,7 +59,7 @@
 					<td><?= $b->no_hp_bengkel ?></td>
 					<td><?= $b->alamat_bengkel ?></td>
 					<td><?= $b->deskripsi_bengkel ?></td>
-					<td><?= $b->gambar ?></td>
+					<td><img src="<?php echo base_url();?>upload/<?php echo $b->gambar?>"  style="width:100%;"></td>
 					<td>
 						<a href="<?= site_url("bengkel/ubah/$b->id_bengkel") ?>" class="btn btn-warning btn-sm">
 							<i class="fa fa-pencil"></i>
