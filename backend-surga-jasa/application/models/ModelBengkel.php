@@ -35,8 +35,7 @@ class ModelBengkel extends CI_Model
 		return $this->db->insert_id();
 	}
 
-	public function update($id, $data)
-	{
+	public function update($id, $data) {
 		$this->db->where($this->primaryKey, $id);
 		return $this->db->update($this->table, $data);
 	}

@@ -105,7 +105,7 @@ class Catering extends CI_Controller {
         redirect('catering'); 
     } 
  
-    public function delete() 
+    public function delete()  
     { 
         $id = $this->input->post('id_catering'); 
         $this->ModelCatering->delete($id); 

@@ -34,58 +34,36 @@ class Bengkel extends CI_Controller
 	
 	public function insert()
 	{
-
-		$config['upload_path']          = './gambar/';
-                $config['allowed_types']        = "jpg|jpeg|png";
-                $config['max_size']             = 10000;
-                $config['max_width']            = 10000;
-                $config['max_height']           = 10000;
-
-                $this->load->library('upload', $config);
-
-                if ( ! $this->upload->do_upload('userfile'))
-                {
-                        $error = array('error' => $this->upload->display_errors());
-
-                        $this->load->view('upload_form', $error);
-                }
-                else
-                {
-                	echo "gagal di tambah";
-                }
-                    {
-                        $gambar = $this->upload->data();
-                        $gambar = $gambar['file_name'];
-                        $nama_bengkel = $this->input->post('nama_bengkel', TRUE);
-                        $no_hp_bengkel = $this->input->post('no_hp_bengkel', TRUE);
-						$alamat_bengkel = $this->input->post('alamat_bengkel', TRUE);
-                        $deskripsi_bengkel = $this->input->post('deskripsi_bengkel', TRUE);
-                
-
-                        $data = array(
-                            'nama_bengkel' => $nama_bengkel,
-                            'no_hp_bengkel' => $no_hp_bengkel,
-							'alamat_bengkel' => $alamat_bengkel,
-                            'deskripsi_bengkel' => $deskripsi_bengkel,
-                            'gambar' => $gambar
-                            );
-                            
-							$id = $this->ModelBengkel->insertGetId($data);
-                            $this->session->set_flashdata('pesan', '<div
-                            class="alert alert-success" role="alert">
-                            Data berhasil DiTambah!
-                            </div>');
-                            redirect('bengkel');
-							
-                        }
-		$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
+		$nama_bengkel = $this->input->post('nama_bengkel', TRUE);
+        $no_hp_bengkel = $this->input->post('no_hp_bengkel', TRUE);
+		$alamat_bengkel = $this->input->post('alamat_bengkel', TRUE);
+        $deskripsi_bengkel = $this->input->post('deskripsi_bengkel', TRUE);
+						
+		$gambar = $_FILES['gambar'];
+		if (!empty($gambar['name'])) {
+			$config['upload_path'] = './upload/';
+			$config['allowed_types'] = 'gif|jpg|png|jpeg';
+			$this->load->library('upload', $config);
+			if (!$this->upload->do_upload('gambar')) {
+				echo "Upload Gagal";
+				die();
+			} else {
+				$gambar = $this->upload->data('file_name');
+			}
+		} else {
+			$gambar = ''; // Atur nilai variabel $gambar menjadi string kosong jika tidak ada gambar yang diunggah
+		}
+		
 		$data = array(
-			"nama_bengkel" => $this->input->post("nama_bengkel")
+			'nama_bengkel' => $nama_bengkel,
+            'no_hp_bengkel' => $no_hp_bengkel,
+			'alamat_bengkel' => $alamat_bengkel,
+            'deskripsi_bengkel' => $deskripsi_bengkel,
+			'gambar' => $gambar
 		);
-		$id = $this->ModelBengkel->insertGetId($data);
+		
+		$this->ModelBengkel->insertGetId($data);
 		redirect('bengkel');
-		$this->load->view('templates/footer');
 	}
 
 	public function ubah($id)
@@ -106,61 +84,35 @@ class Bengkel extends CI_Controller
 
 	public function update()
 	{
-
-		$config['upload_path']          = './gambar/';
-                $config['allowed_types']        = "jpg|jpeg|png";
-                $config['max_size']             = 10000;
-                $config['max_width']            = 10000;
-                $config['max_height']           = 10000;
-
-                $this->load->library('upload', $config);
-
-                if ( ! $this->upload->do_upload('userfile'))
-                {
-                        $error = array('error' => $this->upload->display_errors());
-
-                        $this->load->view('upload_form', $error);
-                }
-                else
-                {
-                	echo "gagal di tambah";
-                }
-                    {
-						$gambar = $this->upload->data();
-                        $gambar = $gambar['file_name'];
-                        $nama_bengkel = $this->input->post('nama_bengkel', TRUE);
-                        $no_hp_bengkel = $this->input->post('no_hp_bengkel', TRUE);
-						$alamat_bengkel = $this->input->post('alamat_bengkel', TRUE);
-                        $deskripsi_bengkel = $this->input->post('deskripsi_bengkel', TRUE);
-						$id = $this->input->post("id_bengkel");
-
-                        $data = array(
-                            'nama_bengkel' => $nama_bengkel,
-                            'no_hp_bengkel' => $jabatan_bengkel,
-							'alamat_bengkel' => $alamat_bengkel,
-                            'deskripsi_bengkel' => $deskripsi_bengkel,
-                            'gambar' => $gambar
-                            );
-                        
-							$id = $this->ModelBengkel->update($id, $data);
-                            $this->session->set_flashdata('pesan', '<div
-                            class="alert alert-success" role="alert">
-                            Data berhasil DiTambah!
-                            </div>');
-                            redirect('bengkel');
-							
-                        }
-
-		$this->load->view('templates/header');
-		$this->load->view('templates/sidebar');
-		$id = $this->input->post('id_bengkel');
+		$nama_bengkel = $this->input->post('nama_bengkel', TRUE);
+        $no_hp_bengkel = $this->input->post('no_hp_bengkel', TRUE);
+		$alamat_bengkel = $this->input->post('alamat_bengkel', TRUE);
+        $deskripsi_bengkel = $this->input->post('deskripsi_bengkel', TRUE);
+						
+		$gambar = $_FILES['gambar'];
+		if (!empty($gambar['name'])) {
+			$config['upload_path'] = './upload/';
+			$config['allowed_types'] = 'gif|jpg|png|jpeg';
+			$this->load->library('upload', $config);
+			if (!$this->upload->do_upload('gambar')) {
+				echo "Upload Gagal";
+				die();
+			} else {
+				$gambar = $this->upload->data('file_name');
+			}
+		} else {
+			$gambar = ''; // Atur nilai variabel $gambar menjadi string kosong jika tidak ada gambar yang diunggah
+		}
+		
 		$data = array(
-			"nama_bengkel" => $this->input->post('nama_bengkel')
-		);
+			'nama_bengkel' => $nama_bengkel,
+            'no_hp_bengkel' => $no_hp_bengkel,
+			'alamat_bengkel' => $alamat_bengkel,
+            'deskripsi_bengkel' => $deskripsi_bengkel,
+			'gambar' => $gambar
+		);		
 		$this->ModelBengkel->update($id, $data);
 		redirect('bengkel');
-		$this->load->view('templates/footer');
-
 	}
 
 	public function delete()
