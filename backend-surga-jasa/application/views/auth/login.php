@@ -35,7 +35,7 @@
                 </div>
       
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+                <button type="submit" href="<?= base_url('dashboard'); ?>" class="btn btn-primary btn-lg btn-block">Sign in</button>
               </form>
               <div class="text-center">
 									<a class="small" href="<?= base_url('auth/registration'); ?>">Create an Account!</a>
