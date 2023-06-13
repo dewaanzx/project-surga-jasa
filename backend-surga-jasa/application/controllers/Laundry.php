@@ -4,6 +4,12 @@ class Laundry extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 		$this->load->model("ModelLaundry");
+		if(!$this->session->userdata('email')){
+			$this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
+  			Login Terlebih Dahulu.
+			</div>');
+			redirect('Auth');
+		}
 	}
 
 	public function index() {
