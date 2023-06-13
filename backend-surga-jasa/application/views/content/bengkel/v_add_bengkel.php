@@ -19,7 +19,7 @@
 <div class="content">  
     <div class="card">
         <div class="card-header">
-            <h3>Form Tambah Catering</h3>
+            <h3>Form Tambah Bengkel</h3>
         </div>
         <div class="card-body">
             <form method="post" action="<?= site_url('bengkel/insert') ?>" enctype="multipart/form-data">
