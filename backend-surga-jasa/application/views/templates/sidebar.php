@@ -12,6 +12,12 @@
         <a href="<?= base_url('dashboard')?>" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
+
+			<li class="nav-item">
+		<a class="nav-link" href="<?= base_url('auth/logout')?>">
+			<i class="fas fa-fw fa-sign-out-alt"></i>
+			<span>Logout</span></a>
+	</li>
       
       </li>
     </ul>
@@ -112,3 +118,4 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
+				
