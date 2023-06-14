@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>D'Yummy Katering</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <title>Soewardono Katering</title>
+    <link href="<?php echo base_url('application/assetsfe/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="shortcut icon" href="../assets/img/logo/faviconsj.ico">
-    <link rel="stylesheet" href="../assets/style/main.css">
+    <link rel="shortcut icon" href="<?php echo base_url('application\assetsfe\img\logo\faviconsj.ico');?>">
+    <link href="<?php echo base_url('application\assetsfe\style\main.css');?>" rel="stylesheet">
 </head>
 
 <body>
@@ -48,7 +48,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 col-xl-6 text-center mx-auto">
-                            <p class="fw-bold text-primary">D'Yummy Jasa</p>
+                            <p class="fw-bold text-primary">Soewardono Jasa</p>
                         </div>
                         <div class="row align-items-stretch no-gutters contact-wrap justify-content-center align-items-center mt-3">
                             <div class="card shadow col-md-8">
@@ -59,7 +59,7 @@
                                             <div class="row">
                                                 <div class="col-md-7 form-group mb-3">
                                                     <div class="card-body">
-                                                        <img src="../assets/img/products/fix/dyummyfix.png" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                        <img src="<?php echo base_url('application\assetsfe\img\products\fix\soewardono.png'); ?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5 form-group mt-3">
@@ -70,7 +70,7 @@
                                                 </div>
                                             </div>
                                             <div class="row ">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7636016566926!2d107.69740691477284!3d-6.918840395000851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68dd315d362899%3A0xc30ef81545cdfb16!2sD&#39;Yummy%20Catering!5e0!3m2!1sen!2sid!4v1686551780258!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.81519526507!2d107.5732974733896!3d-6.912687167651926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e60a4443d409%3A0xaf78f4889a81c0b5!2sCatering%20Ny%20Soewardono%20(SW)!5e0!3m2!1sen!2sid!4v1686551991058!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 form-group">
@@ -149,8 +149,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/bold-and-bright.js"></script>
+    <script src="<?php echo base_url('application\assetsfe\bootstrap\js\bootstrap.min.js');?>"></script>
+    <script src="<?php echo base_url('application\assetsfe\js\bold-and-bright.js');?>"></script>
 </body>
 
 </html>

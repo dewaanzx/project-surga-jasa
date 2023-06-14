@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Lotech Bengkel</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <title>Ditech Bengkel</title>
+    <link href="<?php echo base_url('application/assetsfe/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="shortcut icon" href="../assets/img/logo/faviconsj.ico">
-    <link rel="stylesheet" href="../assets/style/main.css">
+    <link rel="shortcut icon" href="<?php echo base_url('application\assetsfe\img\logo\faviconsj.ico');?>">
+    <link href="<?php echo base_url('application\assetsfe\style\main.css');?>" rel="stylesheet">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
 <div class="mask">
   <div class="d-flex justify-content-center align-items-center mt-5">
     <div>
-      <h1 class="mb-3">Bengkel Lotech</h1>
+      <h1 class="mb-3">Bengkel Ditech</h1>
       <h4 class="mb-3">“We take care of your vehicles like our own.”</h4>
     </div>
   </div>
@@ -48,7 +48,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 col-xl-6 text-center mx-auto">
-                            <p class="fw-bold text-primary">Detail Lotech</p>
+                            <p class="fw-bold text-primary">Detail Ditech</p>
                         </div>
                         <div class="row align-items-stretch no-gutters contact-wrap justify-content-center align-items-center mt-3">
                             <div class="card shadow col-md-8">
@@ -59,7 +59,7 @@
                                             <div class="row">
                                                 <div class="col-md-7 form-group mb-3">
                                                     <div class="card-body">
-                                                        <img src="../assets/img/products/fix/lotechfix.png" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                        <img src="<?php echo base_url('application\assetsfe\img\products\fix\ditechfix.png'); ?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5 form-group mt-3">
@@ -70,7 +70,7 @@
                                                 </div>
                                             </div>
                                             <div class="row ">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.160832652404!2d107.57935791083982!3d-6.903146199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7133cb5949b%3A0x71e29370143881bb!2sBengkel%20Lotech%20Bandung!5e0!3m2!1sen!2sid!4v1686550112258!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.092354450268!2d107.58836971477268!3d-6.879538495028717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e68e69aefee1%3A0x8f0a808710861283!2sBengkel%20Mobil%20Ditech%20Injection!5e0!3m2!1sen!2sid!4v1686550703237!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 form-group">
@@ -149,8 +149,8 @@
             </div>
         </div>
     </footer>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/js/bold-and-bright.js"></script>
+    <script src="<?php echo base_url('application\assetsfe\bootstrap\js\bootstrap.min.js');?>"></script>
+    <script src="<?php echo base_url('application\assetsfe\js\bold-and-bright.js');?>"></script>
 </body>
 
 </html>
