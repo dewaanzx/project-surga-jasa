@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Services - SJ</title>
-  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-  <link rel="shortcut icon" href="../assets/img/logo/faviconsj.ico">
+  <link rel="shortcut icon" href="../../../assets/img/logo/faviconsj.ico">
 </head>
 
 <body>
@@ -15,33 +15,33 @@
     <div class="container py-5 h-100">
       <div class="row d-flex align-items-center justify-content-center h-100">
         <div class="col-md-8 col-lg-7 col-xl-6">
-          <img src="../assets/img/logo/draw2.svg" class="img-fluid" alt="Phone image">
+          <img src="../../assets/img/logo/draw2.svg" class="img-fluid" alt="Phone image">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
           <form class="user" method="post" action="<?= base_url('auth/registration'); ?>">
-            <div class="form-group">
+            <div class="form-group mb-3">
               <input type="text" class="form-control form-control-user" id="name" name="name" placeholder="Full Name" value="<?= set_value('name') ?>">
               <?= form_error('name', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
-            <div class="form-group">
+            <div class="form-group mb-3">
               <input type="email" class="form-control form-control-user" id="email" name="email" placeholder="Email Address" value="<?= set_value('email') ?>">
               <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="form-group row">
-              <div class="col-sm-6 mb-3 mb-sm-0">
+              <div class="col-sm-12 mb-3 mb-sm-0">
                 <input type="password" class="form-control form-control-user" id="password1" name="password1" placeholder="Password">
                 <?= form_error('password1', '<small class="text-danger pl-3">', '</small>'); ?>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-12 mb-3 mt-3">
                 <input type="password" class="form-control form-control-user" id="password2" name="password2" placeholder="Repeat Password">
               </div>
             </div>
-            <button type="submit" class="btn btn-primary btn-user btn-block">
+            <button type="submit" class="btn btn-primary btn-user btn-block mt-3">
               Register Account
             </button>
           </form>
           <hr>
-          <div class="text-center">
+          <div class="text-center mt-2">
             <a class="small" href="<?= base_url('auth'); ?>">Already have an account? Login!</a>
           </div>
         </div>
@@ -69,8 +69,8 @@
       </div>
     </div>
   </footer>
-  <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../assets/js/bold-and-bright.js"></script>
+  <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/bold-and-bright.js"></script>
 </body>
 
 </html>
