@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - SJ</title>
-    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <title>P H Laundry</title>
+    <link href="<?php echo base_url('application/assetsfe/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-    <link rel="shortcut icon" href="./assets/img/logo/faviconsj.ico">
+    <link rel="shortcut icon" href="../assets/img/logo/faviconsj.ico">
+    <link rel="stylesheet" href="../assets/style/main.css">
 </head>
 
 <body>
@@ -15,253 +16,90 @@
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-white shadow d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="500" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><g/><clipPath id="977281ec65"><path d="M 13.578125 223.570312 L 361.691406 223.570312 L 361.691406 323.304688 L 13.578125 323.304688 Z M 13.578125 223.570312 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#977281ec65)"><path fill="#3b5998" d="M 307.972656 282.582031 L 309.671875 285.347656 L 311.667969 287.921875 L 313.9375 290.289062 C 315.570312 291.753906 317.328125 293.089844 319.199219 294.289062 C 321.097656 295.433594 323.089844 296.4375 325.171875 297.292969 C 327.265625 298.105469 329.445312 298.695312 331.675781 299.148438 C 333.914062 299.539062 336.191406 299.753906 338.503906 299.777344 L 341.976562 299.59375 L 345.449219 299.050781 L 348.878906 298.132812 L 352.199219 296.789062 L 352.242188 296.773438 L 352.582031 296.558594 C 356.128906 294.3125 358.832031 290.703125 360.230469 286.820312 C 361.679688 282.925781 361.949219 278.820312 361.472656 274.890625 C 361.011719 270.9375 359.703125 267.125 357.675781 263.621094 C 356.667969 261.863281 355.410156 260.222656 354.011719 258.667969 C 352.207031 257.007812 351.648438 256.285156 349.910156 254.9375 C 346.582031 252.359375 343.46875 250.445312 340.105469 248.902344 C 336.792969 247.25 333.363281 246.042969 329.917969 245.027344 C 323.023438 243.007812 316.046875 241.828125 309.082031 241.136719 C 302.109375 240.449219 295.136719 240.238281 288.15625 240.644531 C 286.410156 240.738281 284.664062 240.835938 282.910156 241.007812 L 280.941406 241.183594 L 279.992188 241.320312 L 277.515625 241.695312 L 272.5625 242.449219 C 270.882812 242.734375 268.996094 243.273438 267.222656 243.683594 C 263.535156 244.484375 260.160156 245.609375 256.832031 246.78125 C 253.410156 247.808594 250.261719 249.355469 247.019531 250.734375 C 243.800781 252.152344 240.777344 253.855469 237.648438 255.402344 L 228.679688 260.5625 C 222.84375 264.15625 217.109375 267.835938 211.59375 271.6875 L 195.238281 283.261719 C 189.832031 287.113281 184.351562 290.710938 178.910156 294.335938 C 173.445312 297.921875 167.847656 301.183594 162.128906 304.199219 L 153.425781 308.328125 C 150.269531 309.699219 147.527344 310.8125 144.402344 311.871094 C 138.296875 313.992188 132 315.621094 125.597656 316.898438 C 112.765625 319.304688 99.476562 319.921875 86.109375 318.71875 C 98.980469 322.519531 112.707031 323.933594 126.375 323.050781 C 133.21875 322.65625 140.035156 321.546875 146.753906 319.945312 C 150.054688 319.195312 153.636719 318.132812 156.71875 317.144531 C 160.078125 316.066406 163.203125 314.707031 166.460938 313.46875 C 172.777344 310.703125 178.960938 307.667969 184.921875 304.34375 C 190.910156 301.0625 196.644531 297.414062 202.3125 293.804688 C 213.667969 286.589844 224.652344 279.160156 235.808594 272.523438 L 244.265625 267.820312 C 247.140625 266.453125 249.96875 264.90625 252.878906 263.683594 C 258.628906 261.257812 264.667969 258.730469 270.371094 257.386719 C 271.84375 257.023438 273.160156 256.5625 274.761719 256.261719 L 282.171875 255.027344 L 282.480469 254.976562 L 282.632812 254.949219 L 282.710938 254.9375 C 283.03125 254.894531 282.359375 254.980469 282.457031 254.96875 L 283.046875 254.910156 L 284.226562 254.789062 C 285.792969 254.609375 287.378906 254.503906 288.964844 254.390625 C 295.3125 254.007812 301.726562 253.863281 308.070312 254.214844 C 314.40625 254.570312 320.699219 255.367188 326.695312 256.851562 C 329.671875 257.621094 332.628906 258.460938 335.390625 259.578125 C 338.203125 260.585938 340.867188 262.105469 342.957031 263.40625 C 343.964844 263.957031 345.761719 265.636719 346.492188 266.140625 C 347.382812 267.011719 348.253906 267.953125 348.988281 269.046875 C 350.480469 271.210938 351.542969 273.765625 352.160156 276.394531 C 353.441406 281.703125 352.246094 287.320312 348.34375 290.445312 L 348.726562 290.214844 L 346.28125 291.503906 L 343.691406 292.570312 L 340.964844 293.359375 L 338.140625 293.878906 C 336.226562 294.09375 334.285156 294.164062 332.316406 294.082031 L 329.378906 293.777344 L 326.453125 293.226562 C 324.515625 292.753906 322.609375 292.140625 320.734375 291.371094 C 318.886719 290.550781 317.105469 289.585938 315.382812 288.472656 L 312.890625 286.660156 L 310.574219 284.59375 L 308.480469 282.285156 L 306.621094 279.703125 Z M 68.648438 267.171875 L 66.789062 264.589844 L 64.695312 262.277344 L 62.375 260.210938 L 59.886719 258.402344 C 58.164062 257.285156 56.382812 256.320312 54.535156 255.503906 C 52.660156 254.734375 50.753906 254.121094 48.816406 253.648438 L 45.890625 253.097656 L 42.949219 252.792969 C 40.984375 252.710938 39.042969 252.78125 37.128906 252.996094 L 34.300781 253.511719 L 31.578125 254.304688 L 28.988281 255.367188 L 26.542969 256.660156 L 26.925781 256.425781 C 23.023438 259.554688 21.828125 265.171875 23.105469 270.476562 C 23.726562 273.105469 24.789062 275.664062 26.28125 277.824219 C 27.015625 278.917969 27.886719 279.863281 28.777344 280.734375 C 29.507812 281.234375 31.304688 282.917969 32.3125 283.46875 C 34.398438 284.769531 37.066406 286.289062 39.878906 287.292969 C 42.640625 288.414062 45.59375 289.25 48.574219 290.023438 C 54.566406 291.503906 60.863281 292.304688 67.199219 292.660156 C 73.542969 293.011719 79.957031 292.867188 86.300781 292.484375 C 87.890625 292.371094 89.476562 292.261719 91.042969 292.082031 L 92.222656 291.960938 L 92.8125 291.902344 C 92.910156 291.890625 92.234375 291.980469 92.558594 291.9375 L 92.632812 291.921875 L 92.789062 291.898438 L 93.097656 291.847656 L 95.570312 291.433594 L 100.507812 290.613281 C 102.109375 290.308594 103.421875 289.847656 104.894531 289.488281 C 110.601562 288.144531 116.640625 285.613281 122.390625 283.191406 C 125.304688 281.964844 128.125 280.417969 131.003906 279.054688 L 139.460938 274.351562 C 150.617188 267.714844 161.601562 260.285156 172.960938 253.070312 C 178.625 249.460938 184.359375 245.808594 190.347656 242.53125 C 196.308594 239.207031 202.492188 236.167969 208.808594 233.402344 C 212.0625 232.164062 215.191406 230.804688 218.550781 229.730469 C 221.636719 228.738281 225.214844 227.679688 228.515625 226.929688 C 235.234375 225.328125 242.050781 224.21875 248.894531 223.824219 C 262.5625 222.9375 276.289062 224.351562 289.160156 228.15625 C 275.792969 226.949219 262.503906 227.566406 249.671875 229.976562 C 243.265625 231.253906 236.972656 232.882812 230.867188 235 C 227.742188 236.058594 225 237.175781 221.839844 238.546875 L 213.140625 242.671875 C 207.421875 245.691406 201.824219 248.953125 196.359375 252.539062 C 190.914062 256.160156 185.433594 259.761719 180.03125 263.613281 L 163.675781 275.1875 C 158.160156 279.039062 152.425781 282.714844 146.589844 286.3125 L 137.621094 291.46875 C 134.492188 293.019531 131.46875 294.722656 128.25 296.136719 C 125.007812 297.519531 121.859375 299.0625 118.4375 300.09375 C 115.109375 301.265625 111.730469 302.386719 108.042969 303.191406 C 106.269531 303.601562 104.386719 304.136719 102.707031 304.425781 L 97.753906 305.175781 L 95.277344 305.554688 L 94.328125 305.691406 L 93.671875 305.75 L 92.355469 305.863281 C 90.605469 306.039062 88.859375 306.132812 87.113281 306.230469 C 80.132812 306.636719 73.15625 306.425781 66.1875 305.738281 C 59.21875 305.042969 52.246094 303.867188 45.351562 301.84375 C 41.902344 300.832031 38.476562 299.621094 35.164062 297.972656 C 31.800781 296.429688 28.6875 294.511719 25.355469 291.933594 C 23.621094 290.585938 23.058594 289.867188 21.257812 288.203125 C 19.855469 286.652344 18.601562 285.007812 17.59375 283.253906 C 15.566406 279.75 14.257812 275.933594 13.792969 271.984375 C 13.320312 268.054688 13.589844 263.949219 15.039062 260.050781 C 16.4375 256.171875 19.140625 252.5625 22.6875 250.316406 L 23.027344 250.101562 L 23.070312 250.082031 L 26.390625 248.742188 L 29.820312 247.820312 L 33.289062 247.277344 L 36.765625 247.09375 C 39.078125 247.121094 41.355469 247.332031 43.59375 247.722656 C 45.824219 248.179688 48.003906 248.769531 50.097656 249.578125 C 52.179688 250.4375 54.167969 251.441406 56.070312 252.585938 C 57.941406 253.785156 59.695312 255.121094 61.332031 256.585938 L 63.601562 258.953125 L 65.59375 261.527344 L 67.296875 264.292969 L 68.648438 267.171875 " fill-opacity="1" fill-rule="nonzero"/></g><g fill="#3b5998" fill-opacity="1"><g transform="translate(116.702937, 233.870125)"><g><path d="M 10.746094 -197.949219 L 10.746094 -196.535156 C 23.1875 -195.121094 33.085938 -192.011719 33.085938 -181.832031 L 33.085938 -5.65625 C 33.085938 29.691406 25.449219 46.941406 -1.414062 59.949219 L -0.847656 60.515625 C 31.105469 51.464844 58.535156 30.824219 73.523438 10.179688 C 72.109375 1.414062 71.828125 -10.464844 71.828125 -27.996094 L 71.828125 -181.832031 C 71.828125 -192.011719 81.726562 -195.121094 93.320312 -196.535156 L 93.320312 -197.949219 Z M 10.746094 -197.949219 "/></g></g></g><g fill="#3b5998" fill-opacity="1"><g transform="translate(84.552297, 266.764784)"><g><path d="M 100.953125 -121.3125 C 71.261719 -128.101562 46.941406 -136.300781 46.941406 -164.582031 C 46.941406 -178.4375 52.597656 -197.949219 79.460938 -197.949219 C 110.285156 -197.949219 143.371094 -173.0625 138 -134.039062 L 165.710938 -176.175781 C 150.722656 -190.597656 126.121094 -201.90625 93.035156 -201.90625 C 46.941406 -201.90625 16.117188 -180.417969 16.117188 -144.503906 C 16.117188 -119.335938 31.953125 -89.644531 87.664062 -76.917969 C 121.3125 -69 138.847656 -62.210938 138.847656 -39.023438 C 138.847656 -26.015625 133.191406 -0.28125 99.824219 -0.28125 C 68.714844 -0.28125 34.78125 -25.449219 38.175781 -65.039062 L 11.3125 -22.621094 C 26.582031 -7.917969 54.292969 3.957031 89.078125 3.957031 C 138.847656 3.957031 169.105469 -22.339844 169.105469 -58.253906 C 169.105469 -79.746094 157.511719 -108.304688 100.953125 -121.3125 Z M 100.953125 -121.3125 "/></g></g></g></svg></span><span>SJ</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
-                    
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contacts.html">Contacts</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="bg-primary-gradient">
-        <div class="container pt-4 pt-xl-5">
-            <div class="row pt-5">
-                <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
-                    <div class="text-center">
-                        <p class="fw-bold text-success mb-2">Surga Jasa</p>
-                        <h1 class="fw-bold">Tempat Layanan Jasa Terbaik di Kota Bandung</h1>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-10 mx-auto">
-                    <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
-                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img alt="product" class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.8" src="assets/img/products/laundry.png"></div>
-                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);"><img alt="product" class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.4" src="assets/img/products/bengkel.png"></div>
-                        <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"><img class="img-fluid" data-bss-parallax data-bss-parallax-speed="0.25" src="assets/img/products/katering.png" /></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <header>
+          <!-- Background image -->
+  <div class="p-5 text-center bg-image" style="
+  background-image: url('../assets/img/products/hldr.png');
+  height: 400px;">
+<div class="mask">
+  <div class="d-flex justify-content-center align-items-center mt-5">
+    <div>
+      <h1 class="mb-3">Jasa Laundry</h1>
+      <h4 class="mb-3">“We take care of your clothes like our own.”</h4>
+    </div>
+  </div>
+</div>
+</div>
+<!-- Background image -->
     </header>
-    <section class="py-5"></section>
-    <section>
-        <div class="container bg-primary-gradient py-5">
-            <div class="row">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Our Services</p>
-                    <h3 class="fw-bold">What we can do for you</h3>
-                </div>
-            </div>
-            <div class="py-5 p-lg-5">
-                <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-                    <div class="col mb-5">
-                        <div class="card shadow-sm">
-                            <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bell">
-                                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"></path>
-                                    </svg></div>
-                                <h5 class="fw-bold card-title">Lorem ipsum dolor sit&nbsp;</h5>
-                                <p class="text-muted card-text mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
-                            </div>
+
+    <section class="wrapper">
+        <div class="container-fostrap">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 col-xl-6 text-center mx-auto">
+                            <p class="fw-bold text-primary">Detail Jasa</p>
                         </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card shadow-sm">
-                            <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
-                                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
-                                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
-                                    </svg></div>
-                                <h5 class="fw-bold card-title">Lorem ipsum dolor sit&nbsp;</h5>
-                                <p class="text-muted card-text mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pin-angle">
-                                        <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146zm.122 2.112v-.002.002zm0-.002v.002a.5.5 0 0 1-.122.51L6.293 6.878a.5.5 0 0 1-.511.12H5.78l-.014-.004a4.507 4.507 0 0 0-.288-.076 4.922 4.922 0 0 0-.765-.116c-.422-.028-.836.008-1.175.15l5.51 5.509c.141-.34.177-.753.149-1.175a4.924 4.924 0 0 0-.192-1.054l-.004-.013v-.001a.5.5 0 0 1 .12-.512l3.536-3.535a.5.5 0 0 1 .532-.115l.096.022c.087.017.208.034.344.034.114 0 .23-.011.343-.04L9.927 2.028c-.029.113-.04.23-.04.343a1.779 1.779 0 0 0 .062.46z"></path>
-                                    </svg></div>
-                                <h5 class="fw-bold card-title">Lorem ipsum dolor sit&nbsp;</h5>
-                                <p class="text-muted card-text mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card shadow-sm">
-                            <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-quote">
-                                        <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"></path>
-                                        <path d="M7.066 6.76A1.665 1.665 0 0 0 4 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 7.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 0 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z"></path>
-                                    </svg></div>
-                                <h5 class="fw-bold card-title">Lorem ipsum dolor sit&nbsp;</h5>
-                                <p class="text-muted card-text mb-4">Erat netus est hendrerit, nullam et quis ad cras porttitor iaculis. Bibendum vulputate cras aenean.</p><button class="btn btn-primary shadow" type="button">Learn more</button>
+                        <div class="row align-items-stretch no-gutters contact-wrap justify-content-center align-items-center mt-3">
+                            <div class="card shadow col-md-8">
+                                <div class="card-body">
+                                    <div class="form h-100">
+                                        <form class="mb-5" method="post" id="contactForm" name="contactForm"
+                                            novalidate="novalidate">
+                                            <div class="row">
+                                                <div class="col-md-7 form-group mb-3">
+                                                    <div class="card-body">
+                                                        <img src="../assets/img/products/fix/phfix.png" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 form-group mt-3">
+                                                    <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black" type="text">
+                                                    <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black" type="text">
+                                                    <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black" type="text">
+                                                    <label class="form-label ">Deskripsi</label><input class="form-control-sm form-control text-black" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="row ">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4764903811633!2d107.59712667577296!3d-6.952983267810593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e939710ac5f5%3A0x6ececb21bccca883!2sPremium%20%26%20Hygienic%20Laundry%20(P%20H%20Laundry)%20l%20Kota%20Bandung!5e0!3m2!1sen!2sid!4v1686184959712!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 form-group">
+                                                    <label for="message" class="col-form-label">Review *</label>
+                                                    <textarea class="form-control error" name="message" id="message" cols="30"
+                                                        rows="4" placeholder="Input Review" aria-required="true"></textarea><label
+                                                        id="message-error" class="error" for="message"></label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 form-group">
+                                                    <input type="submit" value="Kirim Review"
+                                                        class="btn btn-primary rounded-1 py-2 px-4">
+                                                    <span class="submitting"></span>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section>
-        <div class="container py-5">
-            <div class="mx-auto" style="max-width: 900px;">
-                <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center">
-                    <div class="col mb-4">
-                        <div class="card bg-primary-light">
-                            <div class="card-body text-center px-4 py-5 px-md-5">
-                                <p class="fw-bold text-primary card-text mb-2">Fully Managed</p>
-                                <h5 class="fw-bold card-title mb-3">Lorem ipsum dolor sit&nbsp;nullam et quis ad cras porttitor</h5><button class="btn btn-primary btn-sm" type="button">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card bg-secondary-light">
-                            <div class="card-body text-center px-4 py-5 px-md-5">
-                                <p class="fw-bold text-secondary card-text mb-2">Fully Managed</p>
-                                <h5 class="fw-bold card-title mb-3">Lorem ipsum dolor sit&nbsp;nullam et quis ad cras porttitor</h5><button class="btn btn-secondary btn-sm" type="button">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-4">
-                        <div class="card bg-info-light">
-                            <div class="card-body text-center px-4 py-5 px-md-5">
-                                <p class="fw-bold text-info card-text mb-2">Fully Managed</p>
-                                <h5 class="fw-bold card-title mb-3">Lorem ipsum dolor sit&nbsp;nullam et quis ad cras porttitor</h5><button class="btn btn-info btn-sm" type="button">Learn more</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5 mt-5">
-        <div class="container py-5">
-            <div class="row mb-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Testimonials</p>
-                    <h2 class="fw-bold"><strong>What People Say About us</strong></h2>
-                    <p class="text-muted">No matter the project, our team can handle it.&nbsp;</p>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 d-sm-flex justify-content-sm-center">
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-light border rounded border-light p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati rerum doloribus asperiores voluptatum alias autem porro, dignissimos accusantium deserunt odit rem voluptatibus ullam quasi nihil, quisquam dolore, dolores natus illum.</p>
-                        <div class="d-flex"><img alt="avatar" class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/rika.png">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">Rika</p>
-                                <p class="text-muted mb-0">Backend</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-light border rounded border-light p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur error tenetur, sequi aliquid culpa eligendi! Quae non sapiente praesentium, vero in similique sed, iure quibusdam minima ipsa maiores excepturi tempora?</p>
-                        <div class="d-flex"><img alt="avatar" class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/elsa.png">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">Elsa</p>
-                                <p class="text-muted mb-0">Backend</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row row-cols-1 row-cols-sm-2 d-sm-flex justify-content-sm-center">
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-light border rounded border-light p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet autem nam aut minima, laboriosam incidunt enim quo cum veritatis inventore iste consectetur deleniti ratione nisi corrupti rerum explicabo repellendus.</p>
-                        <div class="d-flex"><img alt="avatar" class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/dewa.png">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">Dewa</p>
-                                <p class="text-muted mb-0">Frontend</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-4">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start">
-                        <p class="bg-light border rounded border-light p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, illo. Nam, autem culpa dicta totam consequuntur quisquam illo tenetur dolores facere, consequatur iure cumque itaque ea, beatae natus tempore aliquid.</p>
-                        <div class="d-flex"><img alt="avatar" class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/hilman.png">
-                            <div>
-                                <p class="fw-bold text-primary mb-0">Hilman</p>
-                                <p class="text-muted mb-0">Frontend</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Contacts</p>
-                    <h2 class="fw-bold">How you can reach us</h2>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6 col-xl-4">
-                    <div>
-                        <form class="p-3 p-xl-4" method="post">
-                            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name" placeholder="Name"></div>
-                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email" placeholder="Email"></div>
-                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
-                            <div><button class="btn btn-primary shadow d-block w-100" type="submit">Send </button></div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
-                    <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
-                        <div class="d-flex align-items-center p-3">
-                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
-                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
-                                </svg></div>
-                            <div class="px-2">
-                                <h6 class="fw-bold mb-0">Phone</h6>
-                                <p class="text-muted mb-0">+123456789</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center p-3">
-                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope">
-                                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
-                                </svg></div>
-                            <div class="px-2">
-                                <h6 class="fw-bold mb-0">Email</h6>
-                                <p class="text-muted mb-0">info@example.com</p>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center p-3">
-                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pin">
-                                    <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354zm1.58 1.408-.002-.001.002.001zm-.002-.001.002.001A.5.5 0 0 1 6 2v5a.5.5 0 0 1-.276.447h-.002l-.012.007-.054.03a4.922 4.922 0 0 0-.827.58c-.318.278-.585.596-.725.936h7.792c-.14-.34-.407-.658-.725-.936a4.915 4.915 0 0 0-.881-.61l-.012-.006h-.002A.5.5 0 0 1 10 7V2a.5.5 0 0 1 .295-.458 1.775 1.775 0 0 0 .351-.271c.08-.08.155-.17.214-.271H5.14c.06.1.133.191.214.271a1.78 1.78 0 0 0 .37.282z"></path>
-                                </svg></div>
-                            <div class="px-2">
-                                <h6 class="fw-bold mb-0">Location</h6>
-                                <p class="text-muted mb-0">12 Example Street</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="py-5">
-        <div class="container">
-            <div class="border rounded border-white d-flex flex-column justify-content-between align-items-center flex-lg-row bg-primary-gradient p-4 p-lg-5">
-                <div class="text-center text-lg-start py-3 py-lg-1">
-                    <h2 class="fw-bold mb-2">Subscribe to our newsletter</h2>
-                    <p class="mb-0">Imperdiet consectetur dolor.</p>
-                </div>
-                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post">
-                    <div class="my-2"><input class="border rounded-pill shadow-sm form-control" type="email" name="email" placeholder="Your Email"></div>
-                    <div class="my-2"><button class="btn btn-primary shadow ms-2" type="submit">Subscribe </button></div>
-                </form>
-            </div>
-        </div>
-    </section>
+    </section>    
+    
+
     <footer class="bg-primary-gradient">
         <div class="container py-4 py-lg-5">
             <div class="row justify-content-center">
@@ -311,8 +149,8 @@
             </div>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/bold-and-bright.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bold-and-bright.js"></script>
 </body>
 
 </html>
