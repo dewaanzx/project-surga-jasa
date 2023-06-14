@@ -8,5 +8,20 @@ class Page extends CI_Controller
 		$this->load->view('home');
 
 	}
+	public function services()
+	{		
+		$this->load->view('services');
+
+	}
+	public function team()
+	{		
+		$this->load->view('team');
+
+	}
+	public function contacts()
+	{		
+		$this->load->view('contacts');
+
+	}
 
 }
