@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Services - SJ</title>
-  <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
-  <link rel="shortcut icon" href="../../../assets/img/logo/faviconsj.ico">
+  <title>Registration - SJ</title>
+  <link href="<?php echo base_url('application/assetsfe/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="shortcut icon" href="<?php echo base_url('../application\assetsfe\img\logo\faviconsj.ico');?>">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <div class="container py-5 h-100">
       <div class="row d-flex align-items-center justify-content-center h-100">
         <div class="col-md-8 col-lg-7 col-xl-6">
-          <img src="../../assets/img/logo/draw2.svg" class="img-fluid" alt="Phone image">
+          <img src="../application\assetsfe\img\logo\draw2.svg" class="img-fluid" alt="Phone image">
         </div>
         <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
           <form class="user" method="post" action="<?= base_url('auth/registration'); ?>">
@@ -69,8 +69,8 @@
       </div>
     </div>
   </footer>
-  <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="../../assets/js/bold-and-bright.js"></script>
+  <script src="<?php echo base_url('application\assetsfe\bootstrap\js\bootstrap.min.js');?>"></script>
+    <script src="<?php echo base_url('application\assetsfe\js\bold-and-bright.js');?>"></script>
 </body>
 
 </html>

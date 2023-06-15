@@ -40,10 +40,10 @@
                     </svg></span><span>SJ</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link " href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../services.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../team.html">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../contacts.html">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= base_url('page'); ?>">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="<?= base_url('services'); ?>">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('team'); ?>">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('contacts'); ?>">Contacts</a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,7 @@
     <header>
         <!-- Background image -->
         <div class="p-5 text-center bg-image" style="
-            background-image: url('../products/');
+            background-image: url('../../../application/assetsfe/img/products/hldr.png');
             height: 400px;">
             <div class="mask">
                 <div class="d-flex justify-content-center align-items-center mt-5">
@@ -173,7 +173,7 @@
                                     </g>
                                 </g>
                             </svg></span><span>SJ</span></div>
-                    <p class="text-muted">Sem eleifend donec molestie, integer quisque orci aliquam.</p>
+                    <p class="text-muted">Setiap penyedia jasa memiliki keahlian dan karakteristik unik yang membedakan mereka, namun yang terpenting adalah memberikan layanan yang memenuhi kebutuhan pelanggan, menjaga kualitas, dan memberikan pengalaman yang memuaskan.</p>
                 </div>
             </div>
             <hr>
