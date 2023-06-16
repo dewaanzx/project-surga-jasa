@@ -59,17 +59,17 @@
                                             <div class="row">
                                                 <div class="col-md-7 form-group mb-3">
                                                     <div class="card-body">
-                                                        <img src="<?php echo base_url('application\assetsfe\img\products\fix\phfix.png'); ?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                        <img src="<?php echo base_url();?>upload/<?php echo $laundry->gambar?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5 form-group mt-3">
-                                                    <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Deskripsi</label><input class="form-control-sm form-control text-black" type="text">
-                                                </div>
+                                                        <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black text-center" type="text" value="<?php echo $laundry->nama_laundry; ?>">
+                                                        <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black text-center" value="<?php echo $laundry->alamat_laundry; ?>" type="text">
+                                                        <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black text-center" value="<?php echo $laundry->no_hp_laundry; ?>" type="text">
+                                                        <label class="form-label ">Deskripsi</label><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"><?php echo $laundry->deskripsi_laundry; ?></textarea>
+                                                    </div>
                                             </div>
-                                            <div class="row ">
+                                            <div class="row mt-3">
                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.4764903811633!2d107.59712667577296!3d-6.952983267810593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e939710ac5f5%3A0x6ececb21bccca883!2sPremium%20%26%20Hygienic%20Laundry%20(P%20H%20Laundry)%20l%20Kota%20Bandung!5e0!3m2!1sen!2sid!4v1686184959712!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                             <div class="row">

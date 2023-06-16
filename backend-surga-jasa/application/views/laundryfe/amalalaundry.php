@@ -40,7 +40,7 @@
                     </svg></span><span>SJ</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="<?= base_url('page'); ?>">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?= base_url('page'); ?>">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="<?= base_url('services'); ?>">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('team'); ?>">Team</a></li>
                     <li class="nav-item"><a class="nav-link" href="<?= base_url('contacts'); ?>">Contacts</a></li>
@@ -80,19 +80,19 @@
                                     <div class="form h-100">
                                         <form class="mb-5" method="post" id="contactForm" name="contactForm" novalidate="novalidate">
                                             <div class="row">
-                                                <div class="col-md-7 form-group mb-3">
-                                                    <div class="card-body">
-                                                        <img src="<?php echo base_url('application\assetsfe\img\products\fix\amalafix.png'); ?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                    <div class="col-md-7 form-group mb-3">
+                                                        <div class="card-body">
+                                                            <img src="<?php echo base_url();?>upload/<?php echo $laundry->gambar?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="col-md-5 form-group mt-3">
-                                                    <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Deskripsi</label><input class="form-control-sm form-control text-black" type="text">
-                                                </div>
+                                                    <div class="col-md-5 form-group mt-3">
+                                                        <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black text-center" type="text" value="<?php echo $laundry->nama_laundry; ?>">
+                                                        <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black text-center" value="<?php echo $laundry->alamat_laundry; ?>" type="text">
+                                                        <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black text-center" value="<?php echo $laundry->no_hp_laundry; ?>" type="text">
+                                                        <label class="form-label ">Deskripsi</label><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"><?php echo $laundry->deskripsi_laundry; ?></textarea>
+                                                    </div>
                                             </div>
-                                            <div class="row ">
+                                            <div class="row mt-3">
                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.16427674702!2d107.53524997577199!3d-6.8709104672284935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e45d3a520c63%3A0xe10c84c4ab19f04b!2sAMALA%20Express%20Laundry%20Cimahi!5e0!3m2!1sen!2sid!4v1686185006232!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                             <div class="row">
