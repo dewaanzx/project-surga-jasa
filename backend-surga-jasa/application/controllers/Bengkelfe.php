@@ -19,16 +19,19 @@ class Bengkelfe extends CI_Controller
 	}
     public function dayabengkel()
 	{		
+		$data['bengkel'] = $this->ModelBengkel->getWheredaya();
 		$this->load->view('bengkelfe/dayabengkel');
 
 	}
     public function ditechbengkel()
 	{		
+		$data['bengkel'] = $this->ModelBengkel->getWherditech();
 		$this->load->view('bengkelfe/ditechbengkel');
 
 	}
     public function lotechbengkel()
 	{		
+		$data['bengkel'] = $this->ModelBengkel->getWherelotech();
 		$this->load->view('bengkelfe/lotechbengkel');
 
 	}
