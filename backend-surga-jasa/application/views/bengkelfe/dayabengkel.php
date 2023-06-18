@@ -58,18 +58,18 @@
                                             novalidate="novalidate">
                                             <div class="row">
                                                 <div class="col-md-7 form-group mb-3">
-                                                    <div class="card-body">
-                                                        <img src="<?php echo base_url('application\assetsfe\img\products\fix\dayamotorfix.png'); ?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
-                                                    </div>
+												<div class="card-body">
+                                                            <img src="<?php echo base_url();?>upload/<?php echo $bengkel->gambar?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                        </div>
                                                 </div>
                                                 <div class="col-md-5 form-group mt-3">
-                                                    <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Deskripsi</label><input class="form-control-sm form-control text-black" type="text">
+                                                    <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black" type="text" value="<?php echo $bengkel->nama_bengkel; ?>">
+                                                    <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black" type="text" value="<?php echo $bengkel->alamat_bengkel; ?>">
+                                                    <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black" type="text" value="<?php echo $bengkel->no_hp_bengkel; ?>" >
+                                                    <label class="form-label ">Deskripsi</label><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"><?php echo $bengkel->deskripsi_bengkel; ?></textarea>
                                                 </div>
                                             </div>
-                                            <div class="row ">
+                                            <div class="row mt-3 ">
                                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126744.26164828248!2d107.42999704335936!3d-6.919487099999983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e60800081b61%3A0x1cd26e928846c69d!2sBengkel%20Mobil%20Daya%20motor!5e0!3m2!1sen!2sid!4v1686550436098!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                             <div class="row">
