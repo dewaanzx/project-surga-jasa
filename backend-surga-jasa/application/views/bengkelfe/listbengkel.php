@@ -54,58 +54,66 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
                             <div class="card">
-                                <a class="img-card" href="lotechbengkel.html">
-                                <img src="<?php echo base_url('application\assetsfe\img\products\fix\lotechfix.png'); ?>" />
-                              </a>
+							<!-- get data 1 -->
+                            <?php foreach ($data1 as $d1) { ?>
+                                <a class="img-card" href="#">
+                                    <img src="<?php echo base_url();?>upload/<?php echo $d1->gambar?>" />
+                                </a>
                                 <div class="card-content">
-                                    <h4 class="card-title">
-                                        <a href="lotechbengkel.html"> Lotech Bengkel
-                                      </a>
-                                    </h4>
-                                    <p class="">
-                                        Bukan Lotech Kalo Ga Kenceng.
-                                    </p>
-                                </div>
+                                        <h4 class="card-title">
+                                            <a href="<?= base_url('bengkelfe/lotechbengkel'); ?>"><?php echo $d1->nama_bengkel; ?>
+                                            </a>
+                                        </h4>
+                                        <p><?php echo $d1->deskripsi_bengkel; ?>
+                                        </p>
+                                    </div>
                                 <div class="card-read-more">
                                     <a href="<?= base_url('bengkelfe/lotechbengkel'); ?>" class="btn btn-link btn-block">
                                         Gunakan Layanan
                                     </a>
                                 </div>
+								<?php } ?>
+                                <!-- end get data 1 -->
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="card">
-                                <a class="img-card" href="dayabengkel.html">
-                                <img src="<?php echo base_url('application\assetsfe\img\products\fix\dayamotorfix.png'); ?>" />
-                              </a>
+							<?php foreach ($data2 as $d2) { ?>
+                                <a class="img-card" href="#">
+                                    <img src="<?php echo base_url();?>upload/<?php echo $d2->gambar?>" />
+                                </a>
                                 <div class="card-content">
+								<?php foreach ($data2 as $d2) { ?>
                                     <h4 class="card-title">
-                                        <a href="dayabengkel.html"> Bengkel Mobil Motor Daya
+                                        <a href="dayabengkel.html"> <?php echo $d2->nama_bengkel; ?>
                                       </a>
                                     </h4>
-                                    <p class="">
-                                        Memberikan Pelayanan Prima Kendaraanmu.
+                                    <p>
+                                    <?php echo $d2->deskripsi_bengkel; ?>
                                     </p>
+									<?php } ?>
                                 </div>
                                 <div class="card-read-more">
                                     <a href="<?= base_url('bengkelfe/dayabengkel'); ?>" class="btn btn-link btn-block">
                                         Gunakan Layanan
                                     </a>
                                 </div>
+								<?php } ?>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
                             <div class="card">
-                                <a class="img-card" href="ditechbengkel.html">
-                                <img src="<?php echo base_url('application\assetsfe\img\products\fix\ditechfix.png'); ?>" />
-                              </a>
+							<?php foreach ($data3 as $d3) { ?>
+                                <a class="img-card" href="#">
+                                    <img src="<?php echo base_url();?>upload/<?php echo $d3->gambar?>" />
+                                </a>
                                 <div class="card-content">
                                     <h4 class="card-title">
-                                        <a href="ditechbengkel.html">Ditech Injection  
+                                        <a href="ditechbengkel.html"><?php echo $d3->nama_bengkel; ?>  
                                       </a>
                                     </h4>
                                     <p class="">
-                                        Perbaikan jenis kendaraan Eropa dan Asia
+                                    <?php echo $d3->deskripsi_bengkel; ?>
                                     </p>
                                 </div>
                                 <div class="card-read-more">
@@ -113,6 +121,7 @@
                                         Gunakan Layanan
                                     </a>
                                 </div>
+								<?php } ?>
                             </div>
                         </div>
                     </div>
