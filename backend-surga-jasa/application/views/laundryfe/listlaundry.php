@@ -52,7 +52,7 @@
     <header>
         <!-- Background image -->
         <div class="p-5 text-center bg-image" style="
- background-image: url('../../../application/assetsfe/img/products/hldr.png');
+ background-image: url('https://www.maxlaundrybandung.com/wp-content/uploads/2020/10/IMG_4736-1024x682.jpg');
   height: 400px;">
             <div class="mask">
                 <div class="d-flex justify-content-center align-items-center mt-5">

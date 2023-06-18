@@ -38,21 +38,21 @@ class ModelBengkel extends CI_Model
 	public function getWherelotech() {
 		$this->db->select('*');
 		$this->db->from('bengkel');
-		$this->db->where('nama_bengkel','Lotech Bengkel');
+		$this->db->where('nama_bengkel','Bengkel Lotech');
 		$query = $this->db->get();
 		return $query->row();
 	}
 	public function getWheredaya() {
 		$this->db->select('*');
 		$this->db->from('bengkel');
-		$this->db->where('nama_bengkel','Daya Bengkel');
+		$this->db->where('nama_bengkel','Bengkel Daya');
 		$query = $this->db->get();
 		return $query->row();
 	}
 	public function getWhereditech() {
 		$this->db->select('*');
 		$this->db->from('bengkel');
-		$this->db->where('nama_bengkel','Ditech Bengkel');
+		$this->db->where('nama_bengkel','Bengkel Ditech');
 		$query = $this->db->get();
 		return $query->row();
 	}
@@ -65,7 +65,7 @@ class ModelBengkel extends CI_Model
 	public function getData1() {
         $this->db->select('*');
         $this->db->from('bengkel');
-        $this->db->where('nama_bengkel','Lotech Bengkel');
+        $this->db->where('nama_bengkel','Bengkel Lotech');
         $query = $this->db->get();
 
         return $query->result(); // Mengembalikan hasil query dalam bentuk array objek
@@ -74,7 +74,7 @@ class ModelBengkel extends CI_Model
 	public function getData2() {
         $this->db->select('*');
         $this->db->from('bengkel');
-        $this->db->where('nama_bengkel','Daya Bengkel');
+        $this->db->where('nama_bengkel','Bengkel Daya');
         $query = $this->db->get();
 
         return $query->result(); // Mengembalikan hasil query dalam bentuk array objek
@@ -83,7 +83,7 @@ class ModelBengkel extends CI_Model
     public function getData3() {
         $this->db->select('*');
         $this->db->from('bengkel');
-        $this->db->where('nama_bengkel','Ditech Bengkel');
+        $this->db->where('nama_bengkel','Bengkel Ditech');
         $query = $this->db->get();
 
         return $query->result(); // Mengembalikan hasil query dalam bentuk array objek

@@ -28,13 +28,13 @@
     <header>
           <!-- Background image -->
   <div class="p-5 text-center bg-image" style="
-  background-image: url('../../../application/assetsfe/img/products/bengkel.png');
+  background-image: url('https://s.kaskus.id/images/2018/10/11/10368235_20181011113247.jpg');
   height: 400px;">
 <div class="mask">
   <div class="d-flex justify-content-center align-items-center mt-5">
     <div>
-      <h1 class="mb-3">Jasa Bengkel</h1>
-      <h4 class="mb-3">“We take care of your vehicles like our own.”</h4>
+      <h1 class="mb-3 text-white fw-bold">Jasa Bengkel</h1>
+      <h4 class="mb-3 text-white fw-bold">“We take care of your vehicles like our own.”</h4>
     </div>
   </div>
 </div>

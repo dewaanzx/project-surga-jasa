@@ -52,13 +52,13 @@
     <header>
           <!-- Background image -->
   <div class="p-5 text-center bg-image" style="
-  background-image: url('../../../application/assetsfe/img/products/katering.png');
+  background-image: url('https://bandungasyik.com/wp-content/uploads/2023/02/Rekomendasi-Catering-Wisata-di-Bandung.jpg');
   height: 400px;">
 <div class="mask">
   <div class="d-flex justify-content-center align-items-center mt-5">
     <div>
-      <h1 class="mb-3">Jasa Catering</h1>
-      <h4 class="mb-3">“We take care of your cathering like our own.”</h4>
+    <h1 class="mb-3 text-white fw-bold">Jasa Catering</h1>
+                        <h4 class="mb-3 text-white fw-bold">“We take care of your cathering like our own.”</h4>
     </div>
   </div>
 </div>

@@ -22,21 +22,21 @@ class ModelCatering extends CI_Model {
 	public function getWheredyummy() {
 		$this->db->select('*');
 		$this->db->from('catering');
-		$this->db->where('nama_catering','D Yummy Catering');
+		$this->db->where('nama_catering','D Yummy');
 		$query = $this->db->get();
 		return $query->row();
 	}
 	public function getWheremami() {
 		$this->db->select('*');
 		$this->db->from('catering');
-		$this->db->where('nama_catering','Mami Catering');
+		$this->db->where('nama_catering','Catering Mami');
 		$query = $this->db->get();
 		return $query->row();
 	}
 	public function getWheresoewardono() {
 		$this->db->select('*');
 		$this->db->from('catering');
-		$this->db->where('nama_catering','Soewardono Catering');
+		$this->db->where('nama_catering','Catering Soewardono');
 		$query = $this->db->get();
 		return $query->row();
 	}
@@ -48,7 +48,7 @@ class ModelCatering extends CI_Model {
 	public function getData1() {
         $this->db->select('*');
         $this->db->from('catering');
-        $this->db->where('nama_catering','D Yummy Catering');
+        $this->db->where('nama_catering','D Yummy');
         $query = $this->db->get();
 
         return $query->result(); // Mengembalikan hasil query dalam bentuk array objek
@@ -57,7 +57,7 @@ class ModelCatering extends CI_Model {
     public function getData2() {
         $this->db->select('*');
         $this->db->from('catering');
-        $this->db->where('nama_catering','Mami Catering');
+        $this->db->where('nama_catering','Catering Mami');
         $query = $this->db->get();
 
         return $query->result(); // Mengembalikan hasil query dalam bentuk array objek
@@ -66,7 +66,7 @@ class ModelCatering extends CI_Model {
     public function getData3() {
         $this->db->select('*');
         $this->db->from('catering');
-        $this->db->where('nama_catering','Soewardono Catering');
+        $this->db->where('nama_catering','Catering Soewardono');
         $query = $this->db->get();
 
         return $query->result(); // Mengembalikan hasil query dalam bentuk array objek
