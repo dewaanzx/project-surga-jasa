@@ -53,8 +53,8 @@
                 <div class="col mb-5"><img alt="product" class="rounded img-fluid shadow" src="application/assetsfe/img/products/katering.png"></div>
                 <div class="col d-md-flex align-items-md-end align-items-lg-center mb-5">
                     <div>
-                        <h5 class="fw-bold">Jasa Katering&nbsp;</h5>
-                        <p class="text-muted mb-4">Dengan pengalaman bertahun-tahun dalam industri ini, kami telah bekerja sama dengan pihak yang dapat memberikan layanan katering profesional dan memuaskan. Pihak yang bekerja sama terdiri dari koki berbakat dan staf layanan yang ramah, siap untuk memenuhi kebutuhan kuliner Anda. Kami menawarkan beragam pilihan menu yang lezat dan berkualitas, baik untuk acara pribadi maupun acara korporat.</p><a href="<?= base_url('kateringfe'); ?>" class="btn btn-primary" role="button">Selengkapnya</a>
+                        <h5 class="fw-bold">Jasa Catering&nbsp;</h5>
+                        <p class="text-muted mb-4">Dengan pengalaman bertahun-tahun dalam industri ini, kami telah bekerja sama dengan pihak yang dapat memberikan layanan catering profesional dan memuaskan. Pihak yang bekerja sama terdiri dari koki berbakat dan staf layanan yang ramah, siap untuk memenuhi kebutuhan kuliner Anda. Kami menawarkan beragam pilihan menu yang lezat dan berkualitas, baik untuk acara pribadi maupun acara korporat.</p><a href="<?= base_url('cateringfe'); ?>" class="btn btn-primary" role="button">Selengkapnya</a>
                     </div>
                 </div>
             </div>
