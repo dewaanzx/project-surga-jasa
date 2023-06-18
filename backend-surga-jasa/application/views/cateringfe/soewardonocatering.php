@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Mami Katering</title>
+    <title>Soewardono Catering</title>
     <link href="<?php echo base_url('application/assetsfe/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="shortcut icon" href="<?php echo base_url('application\assetsfe\img\logo\faviconsj.ico');?>">
@@ -28,13 +28,13 @@
     <header>
           <!-- Background image -->
   <div class="p-5 text-center bg-image" style="
-  background-image: url('../../../application/assetsfe/img/products/katering.png');
+  background-image: url('../../../application/assetsfe/img/products/hldr.png');
   height: 400px;">
 <div class="mask">
   <div class="d-flex justify-content-center align-items-center mt-5">
     <div>
-      <h1 class="mb-3">Jasa Katering</h1>
-      <h4 class="mb-3">“We take care of your cathering like our own.”</h4>
+      <h1 class="mb-3">Jasa Catering</h1>
+      <h4 class="mb-3">“We take care of your clothes like our own.”</h4>
     </div>
   </div>
 </div>
@@ -48,7 +48,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 col-xl-6 text-center mx-auto">
-                            <p class="fw-bold text-primary">Mami Katering Jasa</p>
+                            <p class="fw-bold text-primary">Detail Jasa</p>
                         </div>
                         <div class="row align-items-stretch no-gutters contact-wrap justify-content-center align-items-center mt-3">
                             <div class="card shadow col-md-8">
@@ -59,18 +59,18 @@
                                             <div class="row">
                                                 <div class="col-md-7 form-group mb-3">
                                                     <div class="card-body">
-                                                        <img src="<?php echo base_url('application\assetsfe\img\products\fix\mamifix.png'); ?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
+                                                        <img src="<?php echo base_url();?>upload/<?php echo $catering->gambar?>" alt="" class="img-fluid shadow p-1 bg-body rounded" style="height: 280px;">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-5 form-group mt-3">
-                                                    <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black" type="text">
-                                                    <label class="form-label ">Deskripsi</label><input class="form-control-sm form-control text-black" type="text">
-                                                </div>
+                                                        <label class="form-label ">Nama</label><input class="form-control-sm form-control text-black text-center" type="text" value="<?php echo $catering->nama_catering; ?>">
+                                                        <label class="form-label ">Alamat</label><input class="form-control-sm form-control text-black text-center" value="<?php echo $catering->alamat_catering; ?>" type="text">
+                                                        <label class="form-label ">No Telephone</label><input class="form-control-sm form-control text-black text-center" value="<?php echo $catering->no_hp_catering; ?>" type="text">
+                                                        <label class="form-label ">Deskripsi</label><textarea class="form-control" id="exampleFormControlTextarea1" rows="3"><?php echo $catering->deskripsi_catering; ?></textarea>
+                                                    </div>
                                             </div>
-                                            <div class="row ">
-                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126745.07751835193!2d107.5630789567521!3d-6.91644733223381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e765a042f8e3%3A0x62b624cd950c8656!2sCatering%20Mami%20Bandung%20%7C%20Pesan%20Nasi%20Kotak%2C%20Nasi%20Box%20Harga%20Murah!5e0!3m2!1sen!2sid!4v1686551884291!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                            <div class="row mt-3">
+                                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.81519526507!2d107.5732974733896!3d-6.912687167651926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e60a4443d409%3A0xaf78f4889a81c0b5!2sCatering%20Ny%20Soewardono%20(SW)!5e0!3m2!1sen!2sid!4v1686551991058!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                             </div>
                                             <div class="row">
                                                 <div class="col-md-12 form-group">

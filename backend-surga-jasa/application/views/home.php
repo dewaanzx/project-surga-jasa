@@ -66,7 +66,7 @@
                     <div class="col mb-4">
                         <div class="card bg-info-light">
                             <div class="card-body text-center px-4 py-5 px-md-5">
-                                <p class="fw-bold text-info card-text mb-2">Jasa Katering</p>
+                                <p class="fw-bold text-info card-text mb-2">Jasa Catering</p>
                                 <h5 class="fw-bold card-title mb-3">“Your imagination our catering.”</h5>
                             </div>
                         </div>
