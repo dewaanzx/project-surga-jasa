@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Admin | <?=$title?> </title>
+  <!-- Other tags -->
+	<meta name="dicoding:email" content="dewabandis11@gmail.com">
+    <!-- Other tags -->
   <link rel="shortcut icon" href="application/assetsfe/img/logo/faviconsj.ico">
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">

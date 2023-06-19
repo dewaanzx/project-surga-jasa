@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>List Catering</title>
+	<!-- Other tags -->
+	<meta name="dicoding:email" content="dewabandis11@gmail.com">
+    <!-- Other tags -->
     <link href="<?php echo base_url('application/assetsfe/bootstrap/css/bootstrap.min.css');?>" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="shortcut icon" href="<?php echo base_url('application\assetsfe\img\logo\faviconsj.ico');?>">
